@@ -1,0 +1,133 @@
+{
+  "environments": {
+    "development": {
+      "baseUrl": "https://dev.automationexercise.com",
+      "apiUrl": "https://dev.automationexercise.com/api",
+      "timeout": 15000,
+      "retries": 3,
+      "database": {
+        "host": "dev-db.example.com",
+        "port": 5432,
+        "name": "dev_database"
+      }
+    },
+    "staging": {
+      "baseUrl": "https://automationexercise.com",
+      "apiUrl": "https://automationexercise.com/api", 
+      "timeout": 10000,
+      "retries": 2,
+      "database": {
+        "host": "staging-db.example.com",
+        "port": 5432,
+        "name": "staging_database"
+      }
+    },
+    "production": {
+      "baseUrl": "https://automationexercise.com",
+      "apiUrl": "https://automationexercise.com/api",
+      "timeout": 8000,
+      "retries": 1,
+      "database": {
+        "host": "prod-db.example.com",
+        "port": 5432,
+        "name": "prod_database"
+      }
+    }
+  },
+  "browsers": {
+    "chrome": {
+      "name": "chrome",
+      "family": "chromium",
+      "args": [
+        "--disable-web-security",
+        "--disable-features=VizDisplayCompositor",
+        "--no-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    },
+    "firefox": {
+      "name": "firefox",
+      "family": "firefox"
+    },
+    "edge": {
+      "name": "edge",
+      "family": "chromium"
+    }
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 720
+    },
+    "tablet": {
+      "width": 768,
+      "height": 1024
+    },
+    "mobile": {
+      "width": 375,
+      "height": 667
+    },
+    "large": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "timeouts": {
+    "short": 5000,
+    "medium": 10000,
+    "long": 30000,
+    "pageLoad": 60000
+  },
+  "testData": {
+    "maxRetries": 3,
+    "screenshotOnFailure": true,
+    "videoRecording": true,
+    "headless": false
+  },
+  "reporting": {
+    "mochawesome": {
+      "enabled": true,
+      "reportDir": "cypress/reports/mochawesome",
+      "reportFilename": "report",
+      "quiet": true,
+      "overwrite": false,
+      "html": true,
+      "json": true
+    },
+    "allure": {
+      "enabled": true,
+      "resultsDir": "cypress/reports/allure-results",
+      "reportDir": "cypress/reports/allure-report"
+    }
+  },
+  "api": {
+    "endpoints": {
+      "products": "/api/productsList",
+      "brands": "/api/brandsList",
+      "searchProduct": "/api/searchProduct",
+      "verifyLogin": "/api/verifyLogin",
+      "createAccount": "/api/createAccount",
+      "deleteAccount": "/api/deleteAccount",
+      "getUserDetail": "/api/getUserDetailByEmail"
+    },
+    "headers": {
+      "contentType": "application/json",
+      "accept": "application/json"
+    }
+  },
+  "selectors": {
+    "common": {
+      "loadingSpinner": ".loading, .spinner",
+      "errorMessage": ".alert-danger, .error",
+      "successMessage": ".alert-success, .success",
+      "modal": ".modal, .popup",
+      "closeButton": ".close, [data-dismiss='modal']"
+    },
+    "navigation": {
+      "logo": "img[alt='Website for automation practice']",
+      "homeLink": "a[href='/']",
+      "productsLink": "a[href='/products']",
+      "cartLink": "a[href='/view_cart']"
+    }
+  }
+}

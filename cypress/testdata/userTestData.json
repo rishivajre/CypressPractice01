@@ -1,0 +1,89 @@
+{
+  "users": {
+    "validUser": {
+      "firstName": "John",
+      "lastName": "Doe", 
+      "email": "johndoe@example.com",
+      "password": "password123",
+      "phone": "1234567890",
+      "address": "123 Test Street",
+      "city": "Test City",
+      "state": "Test State",
+      "zipCode": "12345",
+      "country": "United States"
+    },
+    "testUser": {
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "testuser@automation.com",
+      "password": "test123",
+      "phone": "9876543210",
+      "address": "456 Automation Lane",
+      "city": "QA City",
+      "state": "Testing State",
+      "zipCode": "54321",
+      "country": "India"
+    },
+    "invalidUser": {
+      "email": "invalid-email",
+      "password": "123",
+      "firstName": "",
+      "lastName": ""
+    }
+  },
+  "credentials": {
+    "admin": {
+      "username": "admin",
+      "password": "admin123",
+      "role": "administrator"
+    },
+    "customer": {
+      "username": "customer",
+      "password": "customer123", 
+      "role": "customer"
+    }
+  },
+  "guestUser": {
+    "firstName": "Guest",
+    "lastName": "User",
+    "email": "guest@example.com",
+    "phone": "5555555555",
+    "address": "789 Guest Avenue",
+    "city": "Guest City",
+    "state": "Guest State",
+    "zipCode": "99999",
+    "country": "United States"
+  },
+  "paymentInfo": {
+    "creditCard": {
+      "cardNumber": "4111111111111111",
+      "expiryMonth": "12",
+      "expiryYear": "2025",
+      "cvv": "123",
+      "cardHolderName": "John Doe"
+    },
+    "debitCard": {
+      "cardNumber": "5555555555554444",
+      "expiryMonth": "06",
+      "expiryYear": "2026",
+      "cvv": "456",
+      "cardHolderName": "Test User"
+    }
+  },
+  "addresses": {
+    "billing": {
+      "address": "123 Billing Street",
+      "city": "Billing City",
+      "state": "Billing State",
+      "zipCode": "11111",
+      "country": "United States"
+    },
+    "shipping": {
+      "address": "456 Shipping Avenue",
+      "city": "Shipping City", 
+      "state": "Shipping State",
+      "zipCode": "22222",
+      "country": "United States"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "testProducts": [
+    {
+      "name": "Winter Top",
+      "category": "Women > Tops",
+      "expectedPrice": "Rs. 600",
+      "description": "Winter collection top for women",
+      "brand": "H&M",
+      "availability": "In Stock",
+      "quantity": 2
+    },
+    {
+      "name": "Summer White Top",
+      "category": "Women > Tops", 
+      "expectedPrice": "Rs. 400",
+      "description": "Summer collection white top",
+      "brand": "Zara",
+      "availability": "In Stock",
+      "quantity": 1
+    },
+    {
+      "name": "Blue Top",
+      "category": "Women > Tops",
+      "expectedPrice": "Rs. 500", 
+      "description": "Blue casual top for women",
+      "brand": "H&M",
+      "availability": "In Stock",
+      "quantity": 3
+    }
+  ],
+  "searchTerms": {
+    "valid": [
+      "Winter Top",
+      "Top",
+      "Blue",
+      "Women"
+    ],
+    "invalid": [
+      "XYZ123NotFound",
+      "InvalidProduct999",
+      "NoResultsFound"
+    ],
+    "partial": [
+      "Winter",
+      "Blue",
+      "Top"
+    ]
+  },
+  "cartTestData": {
+    "singleProduct": {
+      "productName": "Winter Top",
+      "quantity": 2,
+      "expectedTotal": "Rs. 1200"
+    },
+    "multipleProducts": [
+      {
+        "productName": "Winter Top",
+        "quantity": 1,
+        "expectedPrice": "Rs. 600"
+      },
+      {
+        "productName": "Blue Top", 
+        "quantity": 2,
+        "expectedPrice": "Rs. 500"
+      }
+    ]
+  },
+  "userJourney": {
+    "scenario1": {
+      "steps": [
+        "Navigate to home page",
+        "Search for Winter Top",
+        "Click View Product",
+        "Set quantity to 2",
+        "Add to cart",
+        "View cart"
+      ],
+      "expectedResults": [
+        "Home page loads successfully",
+        "Winter Top product found",
+        "Product details page opens",
+        "Quantity set to 2",
+        "Product added to cart",
+        "Cart page shows correct product and quantity"
+      ]
+    }
+  }
+}
