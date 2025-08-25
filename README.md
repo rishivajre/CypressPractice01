@@ -69,7 +69,7 @@ A **production-level Cypress test automation framework** built for **SDET interv
 
 ### 📁 **Project Structure**
 
-```
+
 CypressPractice01/
 ├── cypress/
 │   ├── e2e/                           # Test files
@@ -101,7 +101,7 @@ CypressPractice01/
 ├── package-lock.json                  # Dependency lock file
 ├── .gitignore                         # Git ignore rules
 └── README.md                          # Project documentation
-```
+
 
 
 ### 🎨 **Design Patterns**
