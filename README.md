@@ -354,6 +354,8 @@ This framework showcases **professional-level test automation skills** and serve
 ---
 
 **Built with ❤️ for SDET Excellence**
+
+
 ├── cypress/
 │   ├── e2e/                    # Test specifications
 │   │   └── productJourney.cy.js
@@ -383,7 +385,7 @@ This framework showcases **professional-level test automation skills** and serve
 ├── cypress.config.js           # Cypress configuration
 ├── package.json               # Project dependencies and scripts
 └── README.md                  # Project documentation
-```
+
 
 ## 🔧 Prerequisites
 
