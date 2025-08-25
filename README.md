@@ -71,28 +71,35 @@ A **production-level Cypress test automation framework** built for **SDET interv
 ```
 CypressPractice01/
 ├── cypress/
-│   ├── e2e/                          # Test files
-│   │   ├── firstProductJourney.cy.js # Main test suite (reliable)
-│   │   ├── basicProductJourney.cy.js # Basic test scenarios
-│   │   ├── debugWinterTop.cy.js      # Debug and exploration tests
-│   │   └── workingWinterTop.cy.js    # Winter Top specific tests
-│   ├── fixtures/                     # Test data
-│   │   ├── users.json
-│   │   ├── products.json
-│   │   └── testData.json
-│   ├── pages/                        # Page Object Model
-│   │   ├── BasePage.js               # Base page class
-│   │   ├── HomePage.js               # Home page interactions
-│   │   ├── ProductDetailsPage.js     # Product page logic
-│   │   └── CartPage.js               # Shopping cart functionality
-│   └── support/                      # Support files
-│       ├── commands.js               # Custom commands (25+)
-│       ├── e2e.js                    # Global configurations
-│       ├── DataGenerator.js          # Test data generation
-│       └── TestUtils.js              # Utility functions
-├── cypress.config.js                 # Main Cypress configuration
-├── package.json                      # Dependencies and scripts
-└── README.md                         # This file
+│   ├── e2e/                           # Test files
+│   │   ├── firstProductJourney.cy.js  # Main test suite (reliable)
+│   │   ├── basicProductJourney.cy.js  # Basic test scenarios
+│   │   ├── debugWinterTop.cy.js       # Debug and exploration tests
+│   │   ├── simpleProductJourney.cy.js # Simple product tests
+│   │   ├── workingWinterTop.cy.js     # Winter Top specific tests
+│   │   └── productJourney.cy.js       # Advanced test scenarios
+│   ├── fixtures/                      # Test data
+│   │   └── example.json               # Sample test data
+│   ├── pages/                         # Page Object Model
+│   │   ├── BasePage.js                # Base page class
+│   │   ├── HomePage.js                # Home page interactions
+│   │   ├── ProductDetailsPage.js      # Product page logic
+│   │   └── CartPage.js                # Shopping cart functionality
+│   ├── support/                       # Support files
+│   │   ├── commands.js                # Custom commands (25+)
+│   │   └── e2e.js                     # Global configurations
+│   ├── testdata/                      # External test data
+│   │   ├── environmentConfig.json     # Environment configurations
+│   │   ├── productTestData.json       # Product test data
+│   │   └── userTestData.json          # User test data
+│   └── utils/                         # Utility functions
+│       ├── DataGenerator.js           # Test data generation
+│       └── TestUtils.js               # Helper utilities
+├── cypress.config.js                  # Main Cypress configuration
+├── package.json                       # Dependencies and scripts
+├── package-lock.json                  # Dependency lock file
+├── .gitignore                         # Git ignore rules
+└── README.md                          # Project documentation
 ```
 
 ### 🎨 **Design Patterns**
