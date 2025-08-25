@@ -68,6 +68,7 @@ A **production-level Cypress test automation framework** built for **SDET interv
 ## 🏗️ Architecture
 
 ### 📁 **Project Structure**
+
 ```
 CypressPractice01/
 ├── cypress/
@@ -94,6 +95,7 @@ CypressPractice01/
 ├── package.json                      # Dependencies and scripts
 └── README.md                         # This file
 ```
+
 
 ### 🎨 **Design Patterns**
 - **Page Object Model** - Encapsulated page interactions
